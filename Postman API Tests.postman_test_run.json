@@ -1,0 +1,92 @@
+{
+	"id": "0af135b7-24d6-44e7-a206-f50e22c838a8",
+	"name": "Postman API Tests",
+	"timestamp": "2023-04-18T18:18:27.114Z",
+	"collection_id": "0-2b40cfb8-2dbe-45fa-b20a-2f2fabb5339b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "134a8915-4d66-4837-8c08-309c6d0c181f",
+			"name": "Positive Test Case",
+			"url": "https://reqres.in/api/users?delay=3",
+			"time": 3484,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3484
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "cc703059-2426-4577-8beb-1951edc57e25",
+			"name": "Negative Test Case",
+			"url": "https://reqres.in/api/users/23",
+			"time": 444,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Verify response status code for Negative case": true,
+				"Verify response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Verify response status code for Negative case": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				444
+			],
+			"allTests": [
+				{
+					"Verify response status code for Negative case": true,
+					"Verify response body is empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3928,
+	"collection": {
+		"requests": [
+			{
+				"id": "134a8915-4d66-4837-8c08-309c6d0c181f",
+				"method": "GET"
+			},
+			{
+				"id": "cc703059-2426-4577-8beb-1951edc57e25",
+				"method": "GET"
+			}
+		]
+	}
+}
